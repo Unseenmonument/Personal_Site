@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @help.genre %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @help.task %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @help.country %>
+</p>
+
+<p>
+  <strong>Timeframe:</strong>
+  <%= @help.timeframe %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @help.comments %>
+</p>
+
+<%= link_to 'Edit', edit_help_path(@help) %> |
+<%= link_to 'Back', helps_path %>

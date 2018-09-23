@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fan.name %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @fan.country %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @fan.book %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @fan.comment %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @fan.rating %>
+</p>
+
+<%= link_to 'Edit', edit_fan_path(@fan) %> |
+<%= link_to 'Back', fans_path %>

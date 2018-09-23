@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  genre: MyString
+  task: MyString
+  country: MyString
+  timeframe: MyString
+  comments: MyText
+
+two:
+  genre: MyString
+  task: MyString
+  country: MyString
+  timeframe: MyString
+  comments: MyText

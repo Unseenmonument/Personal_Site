@@ -1,0 +1,47 @@
+<%= form_with(model: @codework, local: true) do |form| %>
+  <% if @codework.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(codework.errors.count, "error") %> prohibited this codework from being saved:</h2>
+
+      <ul>
+      <% codework.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company, id: :codework_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :codework_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :codework_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postion %>
+    <%= form.text_field :postion, id: :codework_postion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salary %>
+    <%= form.number_field :salary, id: :codework_salary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_area :comments, id: :codework_comments %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

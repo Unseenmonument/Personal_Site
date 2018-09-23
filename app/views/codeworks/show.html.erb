@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @codework.company %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @codework.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @codework.state %>
+</p>
+
+<p>
+  <strong>Postion:</strong>
+  <%= @codework.postion %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @codework.salary %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @codework.comments %>
+</p>
+
+<%= link_to 'Edit', edit_codework_path(@codework) %> |
+<%= link_to 'Back', codeworks_path %>

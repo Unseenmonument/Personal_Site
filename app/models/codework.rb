@@ -1,0 +1,2 @@
+class Codework < ApplicationRecord
+end
