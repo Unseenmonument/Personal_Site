@@ -35,11 +35,21 @@
 
 	
 
-	<%= render @fans %>	
 		
-	<%= render partial: 'fans/fans', locals: { fan: @fan } %>
-		
+	<ul>
+		<% @fans.each do |fan| %>
+			<li>	
+				<p>name: <%= fan.name %></p>
+				<p>comment: <%= fan.comment %></p>
+			</li>
+		<% end %>
+		<%= render partial: 'fans/fans', locals: { fan: @fan } %>
+	</ul>
 
+	<p>___________________________________</p>
+
+	
+	
 <br>	
 <br>
 <br>
