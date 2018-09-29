@@ -21,7 +21,7 @@ class HelpsController < ApplicationController
 
     respond_to do |format|
       if @help.save
-        format.html { redirect_to root_path, notice: 'Help was successfully created.' }
+        format.html { redirect_to root_path }
         format.json { render :show, status: :created, location: @help }
       else
         format.html { render :new }

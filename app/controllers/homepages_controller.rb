@@ -6,6 +6,5 @@ class HomepagesController < ApplicationController
     	@codework = Codework.new
 
     	@fans = Fan.all
-#    	@fans = @fans.each
 	end
 end

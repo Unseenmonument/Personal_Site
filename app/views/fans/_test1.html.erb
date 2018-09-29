@@ -1,0 +1,9 @@
+<ul>
+	<% @fans.each do |fan| %>
+		<li>	
+			<p>name: <%= fan.name %></p>
+			<p>comment: <%= fan.comment %></p>
+		</li>
+	<% end %>
+	<%= render partial: 'fans/fans', locals: { fan: @fan } %>
+</ul>

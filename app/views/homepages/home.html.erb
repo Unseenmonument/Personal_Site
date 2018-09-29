@@ -7,7 +7,7 @@
 		</div>
 		<p style="text-align: center; font-size:45px"> Welcome, Traveler! This is my site.</p>
 
-		<p style='text-align: center; font-size:26px'>Whether you've found your way here through word of mouth, a business card, LinkedIn, or a conversation with yours truly, I'm happy to have you!</p>
+		<p style='text-align: center; font-size:26px'>Whether you've found your way here through word of mouth, a business card, LinkedIn, or a conversation with your's truly, I'm happy to have you!</p>
 
 		<p>I'm a bit of a jack of all trades, so before we get started... what brings you here?</p>
 
@@ -31,25 +31,40 @@
 
 		<p>Contact me</p>
 		<p>This is the digital age, keeping in touch shouldn't be too hard. You can find me on these platforms</p>
+
+		<div id="icons" style="text-align: center;">
+			
+			<span id="linkedin_icon">	
+				<a href="https://www.linkedin.com/in/kerron-streater/"> <%= image_tag "linkedin_icon" %></a>
+			</span>
+			
+			<span id="twitter_icon">
+				<a href="https://twitter.com/Unseenmonument"> <%= image_tag("twitter_icon2.png", size: "78x78") %> </a>
+			</span>
+
+			<span id="github_icon">
+				<a href="https://github.com/unseenmonument"> <%= image_tag("github_icon", size: "78x78") %> </a>
+			</span>
+			
+			<span id="instagram_icon">
+				<a href="https://www.instagram.com/unseenmonument/"> <%= image_tag "instagram_icon" %> </a>
+			</span>
+			
+			<span id="facebook_icon">
+				<a href="https://www.facebook.com/Unseenmonument"> <%= image_tag "facebook_icon" %> </a>
+			</span>
+			
+		</div>
 	</div>
 
 	
 
-		
-	<ul>
-		<% @fans.each do |fan| %>
-			<li>	
-				<p>name: <%= fan.name %></p>
-				<p>comment: <%= fan.comment %></p>
-			</li>
-		<% end %>
-		<%= render partial: 'fans/fans', locals: { fan: @fan } %>
-	</ul>
+	<div class="fans_render">	
+		<%= render partial: 'fans/test1', locals: { fans: @fans } %>
+	</div>
 
 	<p>___________________________________</p>
 
-	
-	
 <br>	
 <br>
 <br>

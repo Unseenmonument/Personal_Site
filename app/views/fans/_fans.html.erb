@@ -1,4 +1,8 @@
-<li id="<%= @fan.id %>">
-    <p> name: <%= @fan.name %> </p>
-   	<p> comment: <%= @fan.comment %> </p>
-</li>
+<% if @fan.name != nil %>
+	<li id="<%= @fan.id %>">
+	    <p> name: <%= @fan.name %> </p>
+	   	<p> comment: <%= @fan.comment %> </p>
+	</li>
+
+	<% else %>
+<% end %>

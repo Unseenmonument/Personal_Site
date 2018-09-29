@@ -43,6 +43,8 @@ $( document ).ready(function() {
 		$('#render_fan').hide();
 		$('#render_help').hide();
 	});
+
+	$('.fans_render').hide();
 	
 	
 });
