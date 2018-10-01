@@ -48,6 +48,12 @@ $( document ).ready(function() {
 
 	$('#main_content').hide();
 
+	$('.intro_name').delay(5000).slideUp(100);
+	$('#intro').delay(5000).slideUp(100, function() {
+
+		$('#main_content').show();
+	});
+
 //	$('#intro').hide();
 	
 	

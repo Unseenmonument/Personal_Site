@@ -39,7 +39,9 @@ body, html {
 
     /* Full height */
     height: 100%;
-    width: 100%; 
+    width: 100%;
+
+     
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -50,9 +52,14 @@ body, html {
 
 h1 {
 
-	
+	position: absolute;
 	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
 	text-align: center;
+	color: #ffffff;
+	background-color: #312a38;
+	letter-spacing: 5px;
 	
 	border: 18px solid #312a38;
 	padding: 3px;
