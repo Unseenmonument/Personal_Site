@@ -45,6 +45,10 @@ $( document ).ready(function() {
 	});
 
 	$('.fans_render').hide();
+
+	$('#main_content').hide();
+
+//	$('#intro').hide();
 	
 	
 });

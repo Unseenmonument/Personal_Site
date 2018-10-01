@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+body, html {
+    height: 100%;
+    margin: 0;
+//    background-color: black;
+}
+
+.intro_image {
+
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 	background-color: black;   
+}
+
+.bg {
+    /* The image used */
+    background-image: url(intro1.jpg);
+
+    /* Full height */
+    height: 100%;
+    width: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+
+	
+	top: 50%;
+	text-align: center;
+	
+	border: 18px solid #312a38;
+	padding: 3px;
+	padding-left: 3px;
+}
+
+div {
+  height: 100%;
+}
