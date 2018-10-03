@@ -48,11 +48,23 @@ $( document ).ready(function() {
 
 	$('#main_content').hide();
 
-	$('.intro_name').delay(4000).slideUp(500);
-	$('#intro').delay(4000).slideUp(500, function() {
+	$('.intro_name').delay(4000).fadeOut(500);
+	$('#intro').delay(4400).slideUp(500, function() {
 
 		$('#main_content').show();
 	});
+
+	$('.about_me').click(function() {
+		$('.about_you').show();
+		$('.about_me').hide();
+	});
+
+	$('.about_you').click(function() {
+		$('.about_me').show();
+		$('.about_you').hide();
+	});
+
+	$('.about_you').hide();
 
 //	$('#intro').hide();
 	

@@ -1,48 +1,88 @@
-<div class='card' >
+<div id="intro">
+		<%= render partial: 'intro' %>
+</div>
 
+<div id="main_content">
+	<div class="container-fluid">
+		
+		<p style="text-align: center; font-size:45px"> Welcome To My Site, Traveler! </p>
+				
 
-
-		<div id="intro">
-			<%= render partial: 'intro' %>
-		</div>
-		<div id="main_content">
-			<div class='card' background="">
-				<div class="card">
-					<h1 style="font-size:800%; text-align: center;"> Kerron Streater</h1>
-				</div>
-				<p style="text-align: center; font-size:45px"> Welcome, Traveler! This is my site.</p>
-
-				<p style='text-align: center; font-size:26px'>Whether you've found your way here through word of mouth, a business card, LinkedIn, or a conversation with your's truly, I'm happy to have you!</p>
-
-				<p>I'm a bit of a jack of all trades, so before we get started... what brings you here?</p>
-
-				<p style="text-align: center"><text class='fan' style="font-size:30px;">I'm A Fan</text> <text class='creative' style="font-size:30px;">Creative Writing</text> <text class='webdesign' style="font-size:30px;">Web Design</text></p>
-
-				<div style="text-align: center;">
-					<div id="render_fan">
-						<%= render partial: 'fans/form', :fan => @fan %>
+		
+			<div class="card">
+				<div class="row">	
+					<div class="col-sm-6">
+						<div class="card">
+							<h1 style="font-size: 500%"> Kerron Streater</h1>
+								<div class="i_am">
+									<h3> Writer </h3>
+									<h3> Actor </h3>
+									<h3> Editor </h3>
+									<h3> Web Developer </h3>
+								</div>			
+						</div>		
 					</div>
-
-					<div id="render_web">
-						<%= render partial: 'codeworks/form', :codework => @codework %>
-					</div>
-
-					<div id="render_help">
-						<%= render partial: 'helps/form', :help => @help %>
+					<div class="col-sm-6">
+						<div class="card">
+							<%= image_tag("kerron.jpg") %>
+						</div>
 					</div>
 				</div>
+			</div>
+
+
+
 			
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="about_me">	
+							<div class="card-body">
+								<p style='text-align: center; font-size:26px'>Whether you've found your way here through word of mouth, a business card, LinkedIn, or a conversation with your's truly, I'm happy to have you!</p>
+
+								<p>The world is a facinating place filled with many wonderful things, when I get the time I'm going to do a better job at putting cool wods here that make me seem even more awesome. Until then I guess We'll just be left with whatever this rambling mess is.</p>
+
+								<p> But enough about me, what about you?</p>
+							</div>
+						</div>
+
+						<div class="about_you">
+							<div class="card-body">
+								<p>I'm a bit of a jack of all trades, so before we get started... what brings you here?</p>
+
+								<p style="text-align: center"><text class='fan' style="font-size:30px;">I'm A Fan</text> <text class='creative' style="font-size:30px;">Creative Writing</text> <text class='webdesign' style="font-size:30px;">Web Design</text></p>
+
+								<div style="text-align: center;">
+									<div id="render_fan">
+										<%= render partial: 'fans/form', :fan => @fan %>
+									</div>
+
+									<div id="render_web">
+										<%= render partial: 'codeworks/form', :codework => @codework %>
+									</div>
+
+									<div id="render_help">
+										<%= render partial: 'helps/form', :help => @help %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
+				</div>
+			</div>
+
+			<div>
 				<p>Contact me</p>
 				<p>This is the digital age, keeping in touch shouldn't be too hard. You can find me on these platforms</p>
 
 				<div id="icons" style="text-align: center;">
-					
+						
 					<span id="linkedin_icon">	
 						<a href="https://www.linkedin.com/in/kerron-streater/"> <%= image_tag "linkedin_icon" %></a>
 					</span>
-					
+						
 					<span id="twitter_icon">
 						<a href="https://twitter.com/Unseenmonument"> <%= image_tag("twitter_icon2.png", size: "78x78") %> </a>
 					</span>
@@ -50,24 +90,24 @@
 					<span id="github_icon">
 						<a href="https://github.com/unseenmonument"> <%= image_tag("github_icon", size: "78x78") %> </a>
 					</span>
-					
+						
 					<span id="instagram_icon">
 						<a href="https://www.instagram.com/unseenmonument/"> <%= image_tag "instagram_icon" %> </a>
 					</span>
-					
+						
 					<span id="facebook_icon">
 						<a href="https://www.facebook.com/Unseenmonument"> <%= image_tag "facebook_icon" %> </a>
 					</span>
-					
+						
 				</div>
-				<div class="fans_render">	
-					<%= render partial: 'fans/test1', locals: { fans: @fans } %>
-				</div>
-
-				<p>___________________________________</p>
 			</div>
-		</div>	
 
 
+			<div class="fans_render">	
+				<%= render partial: 'fans/test1', locals: { fans: @fans } %>
+			</div>
 
+			<p>___________________________________</p>
+		
+	</div>
 </div>
