@@ -38,7 +38,7 @@ $( document ).ready(function() {
 	});
 
 	$('.webdesign').click(function(){
-		alert("doing this right");
+		
 		$('#render_web').toggle();
 		$('#render_fan').hide();
 		$('#render_help').hide();
@@ -47,6 +47,7 @@ $( document ).ready(function() {
 	$('.fans_render').hide();
 
 	$('#main_content').hide();
+
 
 	$('.intro_name').delay(3000).fadeOut(500);
 	$('#intro').delay(3400).slideUp(500, function() {
@@ -61,6 +62,7 @@ $( document ).ready(function() {
 
 	});
 
+
 	$('.about_me').click(function() {
 		$('.about_you').show();
 		$('.about_me').hide();
@@ -73,16 +75,35 @@ $( document ).ready(function() {
 
 	$('.about_you').hide();
 
+
 	$('#role_actor').hide();
 	$('#role_editor').hide();
 	$('#role_writer').hide();
 	$('#role_developer').hide();
 
-	$('#me').click(function() {
-		$('#role_actor').show(function() {
-			$('#role_actor').delay(12000).hide();
-		});
+
+
+
+
+
+	$('#me').click(function(){
+
+		var one = "Writer"
+		$('.i_am').text(one);
 	});
+
+	
+
+	$('.i_am').change(function() {
+
+		var two = "Actor"
+		var three = "Editor"
+		var four = "Developer"
+			
+		$('.i_am').text(three);
+	
+	});	
+		
 
 //	$('#intro').hide();
 	

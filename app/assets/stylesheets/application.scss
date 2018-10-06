@@ -74,3 +74,66 @@ body, html {
 	padding-left: 3px;
 }
 
+#frame_1 {
+    background-color: #ffbb84;
+    color: #ffbb84;
+    
+    border-radius: 50%;
+}
+
+.kerron_circle {
+    border-radius: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    height: 92%;
+    top: 50%;
+    left: 50%;
+}
+
+.clear-bg {background-color: transparent;}
+.shapeborder { border: 7px solid white;}
+.circle { border-radius: 50%;}
+.noborder {border: none;}
+
+.c1 {
+//    background-color: #ffbb84;
+    background-color: #fc866f;
+    width: 450px;
+    height: 450px;
+    position: relative;
+    left: 32%;
+}
+
+.c2 {
+    background-color: #64ba44;
+    transform: translate(-50%, -50%);
+    top: 50%; 
+    left: 50%;
+    width: 95%;
+    height: 95%;
+    position: relative;
+}
+
+.c3 {
+//    background-color: #d4aae0;
+    background-color: #9bc9f2;
+    transform: translate(-50%, -50%);
+    top: 50%; 
+    left: 50%;
+    width: 93%;
+    height: 93%;
+    position: relative;
+}
+
+#me {
+    background-color: #312a38;
+    color: #ffffff;
+    border: 18px solid #312a38;
+    position: relative;
+
+    text-align: center;
+    letter-spacing: 7px;
+    top: 135px;
+    left: 17%;
+}
