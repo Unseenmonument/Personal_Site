@@ -48,10 +48,17 @@ $( document ).ready(function() {
 
 	$('#main_content').hide();
 
-	$('.intro_name').delay(4000).fadeOut(500);
-	$('#intro').delay(4400).slideUp(500, function() {
+	$('.intro_name').delay(3000).fadeOut(500);
+	$('#intro').delay(3400).slideUp(500, function() {
 
 		$('#main_content').show();
+	});
+
+	$('#intro').click(function(){
+
+		$('#intro').hide();
+		$('#main_content').show();	
+
 	});
 
 	$('.about_me').click(function() {
@@ -65,6 +72,17 @@ $( document ).ready(function() {
 	});
 
 	$('.about_you').hide();
+
+	$('#role_actor').hide();
+	$('#role_editor').hide();
+	$('#role_writer').hide();
+	$('#role_developer').hide();
+
+	$('#me').click(function() {
+		$('#role_actor').show(function() {
+			$('#role_actor').delay(12000).hide();
+		});
+	});
 
 //	$('#intro').hide();
 	

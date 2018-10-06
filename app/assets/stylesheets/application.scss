@@ -33,6 +33,14 @@ body, html {
  	background-color: black;   
 }
 
+#main_content {
+    background-image: url(fruit.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg {
     /* The image used */
     background-image: url(intro1.jpg);
@@ -66,6 +74,3 @@ body, html {
 	padding-left: 3px;
 }
 
-div {
-//  height: 100%;
-}
