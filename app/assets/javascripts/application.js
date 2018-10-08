@@ -82,42 +82,48 @@ $( document ).ready(function() {
 	$('#role_developer').hide();
 
 
-//	setInterval(function() {
-
-//		$('.i_am').change(function() {
-
-//		var two = "Actor"
-//		var three = "Editor"
-//		var four = "Developer"
-			
-//		$('.i_am').text(three);
-
-
-
-//	}, 4000)
-
-
-
+	
 	$('#me').click(function(){
 
-		var one = "Writer"
-		var two = "Actor"
-		var three = "Editor"
-		var four = "Developer"
 
-		$('.i_am').text(one).show().delay(3000);
 		
-		
+		setInterval(function() {
+
+			$('#role_actor').hide();
+			$('#role_editor').hide();
+			$('#role_writer').hide();
+			$('#role_developer').hide();
+
+			setTimeout( function() {
+			$('#role_writer').show();	
+			}, 1);
+			setTimeout( function() {
+			$('#role_writer').hide();	
+			}, 4001);
+			setTimeout( function() {
+			$('#role_actor').show();	
+			}, 4001);
+			setTimeout( function() {
+			$('#role_actor').hide();	
+			}, 8001);
+			setTimeout( function() {
+			$('#role_editor').show();	
+			}, 8001);
+			setTimeout( function() {
+			$('#role_editor').hide();	
+			}, 12001);
+			setTimeout( function() {
+			$('#role_developer').show();	
+			}, 12001);
+			setTimeout( function() {
+			$('#role_developer').hide();	
+			}, 16001);
+			
+		}, 16001);
 	});
-
-	
-
-	
-	
-//	});	
 		
 
-//	$('#intro').hide();
+	$('#intro').hide();
 	
 	
 });
