@@ -82,27 +82,39 @@ $( document ).ready(function() {
 	$('#role_developer').hide();
 
 
+//	setInterval(function() {
 
+//		$('.i_am').change(function() {
+
+//		var two = "Actor"
+//		var three = "Editor"
+//		var four = "Developer"
+			
+//		$('.i_am').text(three);
+
+
+
+//	}, 4000)
 
 
 
 	$('#me').click(function(){
 
 		var one = "Writer"
-		$('.i_am').text(one);
+		var two = "Actor"
+		var three = "Editor"
+		var four = "Developer"
+
+		$('.i_am').text(one).show().delay(3000);
+		
+		
 	});
 
 	
 
-	$('.i_am').change(function() {
-
-		var two = "Actor"
-		var three = "Editor"
-		var four = "Developer"
-			
-		$('.i_am').text(three);
 	
-	});	
+	
+//	});	
 		
 
 //	$('#intro').hide();
