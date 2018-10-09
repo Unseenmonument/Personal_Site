@@ -81,46 +81,31 @@ $( document ).ready(function() {
 	$('#role_writer').hide();
 	$('#role_developer').hide();
 
-
-	
-	$('#me').click(function(){
-
-
-		
-		setInterval(function() {
-
-			$('#role_actor').hide();
-			$('#role_editor').hide();
-			$('#role_writer').hide();
-			$('#role_developer').hide();
-
-			setTimeout( function() {
-			$('#role_writer').show();	
-			}, 1);
-			setTimeout( function() {
-			$('#role_writer').hide();	
-			}, 4001);
-			setTimeout( function() {
-			$('#role_actor').show();	
-			}, 4001);
-			setTimeout( function() {
-			$('#role_actor').hide();	
-			}, 8001);
-			setTimeout( function() {
-			$('#role_editor').show();	
-			}, 8001);
-			setTimeout( function() {
-			$('#role_editor').hide();	
-			}, 12001);
-			setTimeout( function() {
-			$('#role_developer').show();	
-			}, 12001);
-			setTimeout( function() {
-			$('#role_developer').hide();	
-			}, 16001);
-			
-		}, 16001);
-	});
+	setInterval(function() {
+		$('#role_actor').hide();
+		$('#role_developer').show();
+		setTimeout( function() {
+		$('#role_developer').hide();	
+		}, 2001);
+		setTimeout( function() {
+		$('#role_writer').show();	
+		}, 2001);
+		setTimeout( function() {
+		$('#role_writer').hide();	
+		}, 4001);
+		setTimeout( function() {
+		$('#role_editor').show();	
+		}, 4001);
+		setTimeout( function() {
+		$('#role_editor').hide();	
+		}, 6001);
+		setTimeout( function() {
+		$('#role_actor').show();	
+		}, 6001);
+		setTimeout( function() {
+		$('#role_actor').hide();	
+		}, 8001);
+	}, 8001);
 		
 
 	$('#intro').hide();

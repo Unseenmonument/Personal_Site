@@ -143,11 +143,26 @@ body, html {
 .i_am {
     background-color: #312a38;
     color: #ffffff;
-    border: 18px solid #312a38;
+    border: 10px solid #312a38;
     position: relative;
 
     text-align: center;
     letter-spacing: 7px;
-    top: 135px;
-    left: 17%;
+    top: 115px;
+    left: 50%;
+    width: 35%;
+}
+
+#role_developer {
+    width: 56%;
+    left: 40%;
+}
+
+.social_media {
+    background-color: #312a38;
+    color: #ffffff;
+    border: 7px solid #312a38;
+    width: 43%;
+//    position: relative;
+//    justify-content: center;
 }
