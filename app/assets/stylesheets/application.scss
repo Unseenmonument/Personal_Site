@@ -126,7 +126,10 @@ body, html {
     position: relative;
 }
 
-.blk-rim { border: 7px solid #312a38; }
+.blk-rim { 
+    border: 7px solid #312a38;
+    background-color: #312a38;
+ }
 
 #me {
     background-color: #312a38;
@@ -163,6 +166,10 @@ body, html {
     color: #ffffff;
     border: 7px solid #312a38;
     width: 43%;
-//    position: relative;
-//    justify-content: center;
+}
+
+#no_matter {
+    background-color: #312a38;
+    color: #ffffff;
+    boarder: 10px solid #312a38;
 }
