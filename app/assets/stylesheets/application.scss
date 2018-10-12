@@ -33,13 +33,26 @@ body, html {
  	background-color: black;   
 }
 
-#main_content {
+#body {
     background-image: url(fruit.jpg);
 
+    height: 100%;
+    width: 100%;
+
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
+
+//#main_content {
+//    background-image: url(fruit.jpg);
+//
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//}
 
 .bg {
     /* The image used */
@@ -172,4 +185,31 @@ body, html {
     background-color: #312a38;
     color: #ffffff;
     boarder: 10px solid #312a38;
+}
+
+.more {
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+}
+
+.button_wrap {
+    background-color: solid white;
+    width: 100%;
+    postion: sticky;
+    bottom: 0;
+}
+
+.side_bar {
+    text-align: center;
+    color: #ffffff;
+    background-color: #312a38;
+}
+
+.vertical-text {
+    transform: rotate(90deg);
+    transform-origin: top center 0;
+    text-orientation: upright;
+
+//    float: left;
 }
