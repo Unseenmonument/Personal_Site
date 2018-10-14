@@ -9,34 +9,39 @@
   </head>
 
   <body id="body">
-  	<div class="row">
-		<div class="col-sm-2" style="margin: 0;">
-		  	<nav>
-
-		  		<ul class="navbar-nav">
-		  			<li class="nav-item side_bar">
-		  				<span>Home</span>
-		  			</li>
-		  			<li class="nav-item side_bar">
-		  				<span class="vertical-text">WebDev</span>
-		  			</li>
-		  			<li class="nav-item side_bar">
-		  				<p class="vertical-text">Writing Samples</p>
-		  			</li>  		
-		  		</ul>
-
-		  	</nav>
-		</div>
-	
-		<div class="col-sm-10" style="margin: 0;">
-			<%= yield %>
-		</div>
-
+  	<div id="intro">
+		<%= render partial: 'intro' %>
 	</div>
+  	<div class="container-fluid">
+	  	<div class="row">
+			<div class="col-sm-1">
+			  	<nav>
 
-    
-    <div class="justify-content-center">
-    	<span> © Copyright 2018 Kerron Streater</span>
+			  		<ul class="navbar-nav">
+			  			<li class="nav-item side_bar">
+			  				<p class="vertical-text">Home</p>
+			  			</li>
+			  			<li class="nav-item side_bar">
+			  				<p class="vertical-text">WebDev</p>
+			  			</li>
+			  			<li class="nav-item side_bar">
+			  				<p class="vertical-text">Writing Samples</p>
+			  			</li>  		
+			  		</ul>
+
+			  	</nav>
+			</div>
+		
+			<div class="col-sm-11" style="margin: 0;">
+				<%= yield %>
+			</div>
+
+		</div>
+
+	    
+	    <div class="justify-content-center">
+	    	<span> © Copyright 2018 Kerron Streater</span>
+		</div>
 	</div>
   </body>
 </html>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180923001301) do
+ActiveRecord::Schema.define(version: 20181014170810) do
 
   create_table "codeworks", force: :cascade do |t|
     t.string "company"
@@ -46,6 +46,17 @@ ActiveRecord::Schema.define(version: 20180923001301) do
   create_table "homepages", force: :cascade do |t|
     t.string "home"
     t.string "contaxt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stories", force: :cascade do |t|
+    t.string "author"
+    t.string "title"
+    t.text "comments"
+    t.date "puslished"
+    t.text "story"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -5,6 +5,8 @@ class HomepagesController < ApplicationController
     	@help = Help.new
     	@codework = Codework.new
 
+    	@stories = Story.all
+
     	@fans = Fan.all
 	end
 end

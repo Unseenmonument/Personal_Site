@@ -204,12 +204,15 @@ body, html {
     text-align: center;
     color: #ffffff;
     background-color: #312a38;
+    height: 100%;
+    width: 30%;
 }
 
 .vertical-text {
-    transform: rotate(90deg);
-    transform-origin: top center 0;
     text-orientation: upright;
+    writing-mode: vertical-rl;
+
+    position: relative;
 
 //    float: left;
 }

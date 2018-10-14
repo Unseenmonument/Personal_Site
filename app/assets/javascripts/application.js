@@ -109,7 +109,7 @@ $( document ).ready(function() {
 	}, 8001);
 		
 
-	$('#intro').hide();
+//	$('#intro').hide();
 	
 	
 });
