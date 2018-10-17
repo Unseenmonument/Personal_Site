@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'user/index'
+
+  get 'user/new'
+
+  get 'user/edit'
+
+  get 'user/show'
+
+  get 'user/delete'
+
   devise_for :users
   root "homepages#home"
 
