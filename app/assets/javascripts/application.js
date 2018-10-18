@@ -109,7 +109,11 @@ $( document ).ready(function() {
 	}, 8001);
 		
 
-//	$('#intro').hide();
+	$('#intro').hide();
+
+	$('#create_account').click( function() {
+		$('#make_user').modal('show');
+	});
 	
 	
 });
