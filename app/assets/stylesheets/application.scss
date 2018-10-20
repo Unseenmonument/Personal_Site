@@ -34,15 +34,15 @@ body, html {
 }
 
 #body {
-    background-image: url(tile.jpg);
+    background-image: url(tile3.jpg);
 
     height: 100%;
     width: 100%;
 
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+//    background-repeat: no-repeat;
+    background-size: 100% 110%;
     background-color: black;
 }
 
