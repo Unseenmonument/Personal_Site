@@ -114,6 +114,33 @@ $( document ).ready(function() {
 	$('#create_account').click( function() {
 		$('#make_user').modal('show');
 	});
+
+	$(window).click(function(){
+		if ($(event.target).is('.modal-backdrop')) {
+			$('#make_user').modal('hide');
+		};
+	});
+
+	$('#new_user_form').hide();
+	$('#btn_existing_user').hide();
+
+	$('#btn_existing_user').click( function() {
+		$('#btn_existing_user').hide();
+		$('#btn_non_user').show();
+		$('#existing_user_form').show();
+		$('#new_user_form').hide();
+	});
+
+	$('#btn_non_user').click( function () {
+		$('#btn_non_user').hide();
+		$('#btn_existing_user').show();
+		$('#existing_user_form').hide();
+		$('#new_user_form').show();
+	});
+
+
+
+
 	
 	
 });
