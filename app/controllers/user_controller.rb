@@ -1,11 +1,15 @@
 class UserController < ApplicationController
+
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
+
 
   def index
-    @Users = User.all
+    @users = User.all
   end
 
   def new
+    @user = User.new
   end
 
   def edit

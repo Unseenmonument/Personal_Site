@@ -8,60 +8,16 @@
       </div>
 
       <div class="modal-body" id="new_user_form">
-        <h2>Sign Up</h2>
-        <%= form_with(model: @user, local: true) do |form| %>
-          <% if @user.errors.any? %>
-            <div id="error_explanation">
-              <h2><%= pluralize(user.errors.count, "error") %> prohibited this help from being saved:</h2>
-
-              <ul>
-              <% user.errors.full_messages.each do |message| %>
-                <li><%= message %></li>
-              <% end %>
-              </ul>
-            </div>
-          <% end %>
-
-          <div class="field">
-            <%= form.label :name %>
-            <%= form.text_field :name, id: :user_name %>
-          </div>
-
-          <div class="field">
-            <%= form.label :username %>
-            <%= form.text_field :username, id: :user_username %>
-          </div>
-
-          <div class="field">
-            <%= form.label :email %>
-            <%= form.text_field :email, id: :user_email %>
-          </div>
-
-          <div class="field">
-            <%= form.label :location %>
-            <%= form.text_field :location, id: :user_location %>
-          </div>
-
-          <div class="field">
-            <%= form.label :password %>
-            <%= form.text_area :password, id: :user_password %>
-          </div>
-
-          <div class="actions">
-            <%= form.submit %>
-          </div>
-        <% end %>
+        <%= render partial: "devise/registrations/new1" %>
       </div>
 
-      <div class="modal-body" id="existing_user_form">
-        
+      <div class="modal-body" id="existing_user_form">  
         <%= render partial: "devise/sessions/new" %>
-
       </div>
 
       <div class="modal-footer">
-        <div class="button" id="btn_existing_user">Already Signed Up?</div>
-        <div class="button" id="btn_non_user">Need To Sign Up?</div>
+        <div type="button" class="button" id="btn_existing_user"> Already Signed Up? </div>
+        <div type="button" class="button" id="btn_non_user"> Need To Sign Up? </div>
       </div>
 
 

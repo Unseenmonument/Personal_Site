@@ -10,7 +10,7 @@
 
   <body id="body">
   	<div id="intro">
-		<%= render partial: 'intro' %>
+		<%= render partial: 'homepages/intro' %>
 	</div>
   	<div class="container-fluid">
 	  	<div class="row">
@@ -18,9 +18,18 @@
 			  	<nav>
 
 			  		<ul class="navbar-nav">
-				  		<li id="create_account" class="nav-item side_bar">
-				  			<p class="vertical-text">Create Account</p>
-				  		</li>
+
+			  			<% if !user_signed_in? %>
+					  		<li id="create_account" class="nav-item side_bar">
+					  			<p class="vertical-text">Create Account</p>
+					  		</li>
+					  	<% end %>
+					  	<% if user_signed_in? %>
+					  		<li id="btn_sign_out" class="nav-item side_bar">
+					  			<p class="vertical-text">Sign Out</p>
+					  		</li>
+					  	<% end %>
+
 				  		<li class="nav-item side_bar">
 				  			<p class="vertical-text">Log In</p>
 				  		</li>
