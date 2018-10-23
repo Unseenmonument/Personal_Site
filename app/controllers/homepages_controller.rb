@@ -1,5 +1,7 @@
 class HomepagesController < ApplicationController
 
+	before_action :authenticate_user!
+
 	def home
 		@fan = Fan.new
     	@help = Help.new
