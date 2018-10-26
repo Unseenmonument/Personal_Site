@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  root 'homepages#home'
+#  root 'user#index'
+
   get 'user/index'
 
   get 'user/new'
@@ -11,7 +14,7 @@ Rails.application.routes.draw do
   get 'user/delete'
 
   devise_for :users
-  root "homepages#home"
+  
 
   resources :homepages
   resources :helps
