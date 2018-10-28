@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'stories/index'
+
+  get 'stories/new'
+
+  get 'stories/edit'
+
+  get 'stories/update'
+
+  get 'stories/destroy'
+
   root 'homepages#home'
 #  root 'user#index'
 

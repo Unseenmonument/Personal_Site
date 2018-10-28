@@ -1,0 +1,9 @@
+
+<%= form_for(:story, :url => session_path(:story)) do |f| %>
+  <p>Authory Name: <%= f.text_field :author %></p>
+  <p>Story Title: <%= f.text_field :title %></p>
+  <p>Your Story: <%= f.text_box :story %></p>
+  <p>Published On: <%= f.text_field :published %></p>
+  <%= f.submit 'Subit Your Story' %>
+  <%= link_to "Forgot your password?", new_password_path(:user) %>
+<% end %>
