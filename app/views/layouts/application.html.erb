@@ -19,13 +19,17 @@
 
 			  		<ul class="navbar-nav">
 
+			  			<li class="nav-item side_bar">
+			  				<p>Menu</p>
+			  			</li>
+
 			  			<% if !user_signed_in? %>
 					  		<li id="create_account" class="nav-item side_bar">
-					  			<p class="vertical-text">Log In/Create Account</p>
+					  			<p>Log In/Create Account</p>
 					  		</li>
 					  	<% else %>
 						  	<li id="btn_sign_out" class="nav-item side_bar">
-							  <p class="vertical-text"><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
+							  <p><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
 							</li>
 					  	<% end %>
 					  	<!--<% if user_signed_in? %>
@@ -36,13 +40,13 @@
 
 				  		
 			  			<li class="nav-item side_bar">
-			  				<p class="vertical-text">Home</p>
+			  				<p>Home</p>
 			  			</li>
 			  			<li class="nav-item side_bar">
-			  				<p class="vertical-text">WebDev</p>
+			  				<p>WebDev</p>
 			  			</li>
 			  			<li class="nav-item side_bar">
-			  				<p class="vertical-text">Writing Samples</p>
+			  				<p>Writing Samples</p>
 			  			</li>  		
 			  		</ul>
 
