@@ -131,15 +131,21 @@ $( document ).ready(function() {
 		$('#new_user_form').hide();
 	});
 
-	$('#btn_non_user').click( function () {
+	$('#btn_non_user').click( function() {
 		$('#btn_non_user').hide();
 		$('#btn_existing_user').show();
 		$('#existing_user_form').hide();
 		$('#new_user_form').show();
 	});
 
+	$('#navbar_nav').hide();
 
+	$('#nav_total').click( function() {
 
+		$('#navbar_nav').show();
+		
+
+	});
 
 	
 	
