@@ -138,14 +138,17 @@ $( document ).ready(function() {
 		$('#new_user_form').show();
 	});
 
-	$('#navbar_nav').hide();
+	$('.nav-extra').hide();
 
-	$('#nav_total').click( function() {
 
-		$('#navbar_nav').show();
-		
-
+	$('.nav_total').toggle( function() {
+		$('.nav-extra').show();
+//		$('.nav-extra').hide();
 	});
+
+//	$('.nav_total').click( function() {
+//		
+//	});
 
 	
 	
