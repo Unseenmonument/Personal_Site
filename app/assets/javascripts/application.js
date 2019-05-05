@@ -138,18 +138,14 @@ $( document ).ready(function() {
 		$('#new_user_form').show();
 	});
 
+
 	$('.nav-extra').hide();
-
-
-	$('.nav_total').toggle( function() {
-		$('.nav-extra').show();
-//		$('.nav-extra').hide();
+	$('.navbar-nav').hide();
+	$('.menu-drop').click( function() {
+		$('.nav-extra').slideToggle();
 	});
 
-//	$('.nav_total').click( function() {
-//		
-//	});
 
-	
+
 	
 });
