@@ -141,11 +141,13 @@ $( document ).ready(function() {
 
 	$('.nav-extra').hide();
 	$('.navbar-nav').hide();
-	$('.menu-drop').click( function() {
+//	$('.menu-drop').click( function() {
+//		$('.nav-extra').slideToggle();
+//	});
+
+	$('.nav_total').click( function() {
 		$('.nav-extra').slideToggle();
 	});
-
-
 
 	
 });

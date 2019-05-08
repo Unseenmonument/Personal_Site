@@ -8,36 +8,26 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body id="body">
+  <body id="body" style="padding-left: 0">
   	<div id="intro">
 		<%= render partial: 'homepages/intro' %>
 	</div>
-  	<div class="container-fluid">
+  	<div class="container-fluid" style="padding-left: 0">
 	  	<div class="row">
-			<div class="col-sm-1">
+			<!-- <div class="col-sm-1" style="margin: 0; padding-right: 0"> -->
 			  	<nav class="nav_total side_bar">
 
-			  		<ul>
-			  			<li class="nav-item side_bar menu-drop" >
-			  				<p>Menu</p>
-			  			</li>
-			  		</ul>
-
-
-
-			  		<ul class="navbar-nav nav-extra">
-
-			  			<!--<li class="nav-item side_bar menu-drop" >
-			  				<p>Menu</p>
-			  			</li> -->
+			  		<p class="nav-item side_bar menu-drop" > Menu </p>
+			  		
+			  		<ul class="nav-item navbar-nav nav-extra">
 
 			  			<% if !user_signed_in? %>
 					  		<li id="create_account" class="nav-item side_bar nav-extra">
-					  			<p>Log In/Create Account</p>
+					  			<p class="nav-extra-link">Log In/Create Account</p>
 					  		</li>
 					  	<% else %>
 						  	<li id="btn_sign_out" class="nav-item side_bar nav-extra">
-							  <p><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
+							  <p class="nav-extra-link"><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
 							</li>
 					  	<% end %>
 					  	<!--<% if user_signed_in? %>
@@ -48,20 +38,20 @@
 
 				  		
 			  			<li class="nav-item side_bar nav-extra">
-			  				<p>Home</p>
+			  				<p class="nav-extra-link">Home</p>
 			  			</li>
 			  			<li class="nav-item side_bar nav-extra">
-			  				<p>WebDev</p>
+			  				<p class="nav-extra-link">WebDev</p>
 			  			</li>
 			  			<li class="nav-item side_bar nav-extra">
-			  				<p>Writing Samples</p>
+			  				<p class="nav-extra-link">Writing Samples</p>
 			  			</li>  		
 			  		</ul>
 
 			  	</nav>
-			</div>
+			<!-- </div> -->
 		
-			<div class="col-sm-11" style="margin: 0;">
+			<div class="col-sm-11" style="margin: 0px; padding-left: 0">
 				<%= yield %>
 			</div>
 
@@ -69,8 +59,9 @@
 
 	    
 	    <div class="justify-content-center">
-	    	<span> © Copyright 2018 Kerron Streater</span>
+	    	<span> © Copyright 2019 Kerron Streater</span>
 		</div>
+
 	</div>
   </body>
 </html>

@@ -205,7 +205,7 @@ body, html {
     color: #ffffff;
     background-color: #312a38;
 //    height: 100%;
-    width: 100%;
+//    width: 100%;
 }
 
 .vertical-text {
@@ -225,11 +225,27 @@ body, html {
     width: 28%;
 }
 
-//.nav_total {
-//    height: 100%;
-//    width: 100%;
-//}
+.nav_total {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 150px;
+//    cursor: pointer;
 
-.navbar-nav {
-    height: 100%;
 }
+
+.nav-item {
+//    position: sticky;
+//    top: 0;
+//    left: 0%;
+    width: 150px;
+}
+
+.menu-drop { 
+    cursor: pointer;
+//    position: fixed;
+//    top: 0;
+//    left: 0%;
+    width: 150px;
+}
+.nav-extra-link { cursor: pointer; }
