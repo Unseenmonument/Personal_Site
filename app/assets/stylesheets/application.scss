@@ -238,10 +238,19 @@ body, html {
     position: fixed;
     top: 0;
     left: 0%;
-    width: 45px;
-    length: 100%;
-    color: #ffffff;
+    width: 10px;
+    height: 100vh;
+    background-color: #312a38;
 
+}
+
+.sidebar_large {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 150px;
+    height: 100vh;
+    background-color: #312a38;
 }
 
 .nav-item {
