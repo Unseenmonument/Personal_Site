@@ -147,6 +147,12 @@ $( document ).ready(function() {
 		$('.sidebar_small').hide();
 	});
 
+	$('.yield').click( function() {
+		$('.sidebar_small').show();
+		$('.sidebar_large').hide();
+	});		
+
+
 	$('.nav_total').click( function() {
 		$('.nav-extra').slideToggle();
 	});
