@@ -141,16 +141,16 @@ $( document ).ready(function() {
 
 	$('.nav-extra').hide();
 	$('.navbar-nav').hide();
-	$('.sidebar_large').hide();
-	$('.sidebar_small').hover( function() {
-		$('.sidebar_large').show();
-		$('.sidebar_small').hide();
-	});
+//	$('.sidebar_large').hide();
+//	$('.sidebar_small').hover( function() {
+//		$('.sidebar_large').show();
+//		$('.sidebar_small').hide();
+//	});
 
-	$('.yield').click( function() {
-		$('.sidebar_small').show();
-		$('.sidebar_large').hide();
-	});		
+//	$('.yield').click( function() {
+//		$('.sidebar_small').show();
+//		$('.sidebar_large').hide();
+//	});		
 
 
 	$('.nav_total').click( function() {

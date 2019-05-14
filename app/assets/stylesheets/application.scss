@@ -244,14 +244,21 @@ body, html {
 
 }
 
+.sidebar_small:hover + .sidebar_large {
+    left: 0;
+    transition: 1s;
+    
+}
+    
+
 .sidebar_large {
     position: fixed;
     top: 0;
-    left: 0%;
+    left: -150px;
     width: 150px;
     height: 100vh;
     background-color: #312a38;
-    transition: .5;
+    transition: 1s;
 }
 
 .nav-item {
