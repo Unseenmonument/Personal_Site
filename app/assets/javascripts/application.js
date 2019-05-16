@@ -142,10 +142,16 @@ $( document ).ready(function() {
 	$('.nav-extra').hide();
 	$('.navbar-nav').hide();
 	$('.sidebar_large').hide();
-//	$('.sidebar_small').hover( function() {
-//		$('.sidebar_large').show();
-//		$('.sidebar_small').hide();
-//	});
+
+
+	$('.sidebar_small').mouseenter( function() {
+//		setTimeout( function() {
+			$('.sidebar_large').delay(999).show(0);
+//		}, 1000);
+//		setTimeout( function() {
+			$('.sidebar_small').delay(1000).hide(0);
+//		}, 1000);
+	});
 
 	$('.yield').click( function() {
 		$('.sidebar_small').show();

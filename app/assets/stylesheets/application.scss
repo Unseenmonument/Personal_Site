@@ -244,21 +244,25 @@ body, html {
 
 }
 
-@keyframes slideout {
-    from {
-    margin-left: -150px;
-    width: 150px;
-    }
+@keyframes popout {
+    0%      {left: -150px;}
+    50%     {left: 0;}
+    100%    {left: -150px}
 
-    to {
-    margin-left: 0;
-    width: 150px;
-    }
+//    from {
+//    margin-left: -150px;
+//    width: 150px;
+//    }
+
+//    to {
+//   margin-left: 0;
+//    width: 150px;
+//    }
 }
 
 .sidebar_small:hover {
-    animation-name: slideout;
-    animation-duration: 1s;
+    animation-name: popout;
+    animation-duration: .5s;
     animation-iteration-count: 1;
 }
 
@@ -268,7 +272,7 @@ body, html {
 .sidebar_large {
     position: fixed;
     top: 0;
-    left: -150px;
+    left: 0;
     width: 150px;
     height: 100vh;
     background-color: #312a38;
