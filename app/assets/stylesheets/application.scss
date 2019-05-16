@@ -244,11 +244,25 @@ body, html {
 
 }
 
-.sidebar_small:hover + .sidebar_large {
-    left: 0;
-    transition: 1s;
-    
+@keyframes slideout {
+    from {
+    margin-left: -150px;
+    width: 150px;
+    }
+
+    to {
+    margin-left: 0;
+    width: 150px;
+    }
 }
+
+.sidebar_small:hover {
+    animation-name: slideout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
     
 
 .sidebar_large {
