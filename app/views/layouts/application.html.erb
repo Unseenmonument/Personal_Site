@@ -20,36 +20,40 @@
 					<div class="sidebar_large">
 					  	<nav class="nav_total side_bar">
 
-					  		<p class="side_bar menu-drop" > Menu </p>
+					  		<div class="side_bar menu-drop" > 
+					  			<div class="menu_text">Menu
+					  				<div style="top: 0;"> _________ </div>
+					  			</div>
 					  		
-					  		<ul class="navbar-nav nav-extra">
+						  		<ul class="navbar-nav nav-extra">
 
-					  			<% if !user_signed_in? %>
-							  		<li id="create_account" class="side_bar nav-extra">
-							  			<p class="nav-extra-link">Log In/Create Account</p>
-							  		</li>
-							  	<% else %>
-								  	<li id="btn_sign_out" class="side_bar nav-extra">
-									  <p class="nav-extra-link"><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
-									</li>
-							  	<% end %>
-							  	<!--<% if user_signed_in? %>
-							  		<li id="btn_sign_out" class="nav-item side_bar">
-							  			<p class="vertical-text">Sign Out</p>
-							  		</li>
-							  	<% end %> -->
+						  			<% if !user_signed_in? %>
+								  		<li id="create_account" class="side_bar nav-extra">
+								  			<p class="nav-extra-link">Log In/Create Account</p>
+								  		</li>
+								  	<% else %>
+									  	<li id="btn_sign_out" class="side_bar nav-extra">
+										  <p class="nav-extra-link"><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
+										</li>
+								  	<% end %>
+								  	<!--<% if user_signed_in? %>
+								  		<li id="btn_sign_out" class="nav-item side_bar">
+								  			<p class="vertical-text">Sign Out</p>
+								  		</li>
+								  	<% end %> -->
 
-						  		
-					  			<li class="side_bar nav-extra">
-					  				<p class="nav-extra-link">Home</p>
-					  			</li>
-					  			<li class="side_bar nav-extra">
-					  				<p class="nav-extra-link">WebDev</p>
-					  			</li>
-					  			<li class="side_bar nav-extra">
-					  				<p class="nav-extra-link">Writing Samples</p>
-					  			</li>  		
-					  		</ul>
+							  		
+						  			<li class="side_bar nav-extra">
+						  				<p class="nav-extra-link">Home</p>
+						  			</li>
+						  			<li class="side_bar nav-extra">
+						  				<p class="nav-extra-link">WebDev</p>
+						  			</li>
+						  			<li class="side_bar nav-extra">
+						  				<p class="nav-extra-link">Writing Samples</p>
+						  			</li>  		
+						  		</ul>
+						  	</div>
 				  		</nav>
 				  	</div>
 			  	</div>

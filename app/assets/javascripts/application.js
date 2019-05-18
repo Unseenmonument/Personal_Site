@@ -69,10 +69,12 @@ $( document ).ready(function() {
 		$('#render_fan').show();
 	});
 
+
 	$('#about_you').click(function() {
 		$('.about_me').show();
 		$('.about_you').hide();
 	});
+
 
 	$('.about_you').hide();
 
@@ -81,6 +83,7 @@ $( document ).ready(function() {
 	$('#role_editor').hide();
 	$('#role_writer').hide();
 	$('#role_developer').hide();
+
 
 	setInterval(function() {
 		$('#role_actor').hide();
@@ -111,15 +114,18 @@ $( document ).ready(function() {
 
 	$('#intro').hide();
 
+
 	$('#create_account').click( function() {
 		$('#make_user').modal('show');
 	});
+
 
 	$(window).click(function(){
 		if ($(event.target).is('.modal-backdrop')) {
 			$('#make_user').modal('hide');
 		};
 	});
+
 
 	$('#new_user_form').hide();
 	$('#btn_existing_user').hide();
@@ -144,26 +150,14 @@ $( document ).ready(function() {
 	$('.menu-drop').hide();
 	$('.sidebar_large').hide();
 
-//	 var side = document.getElementsByClassName('sidebar_small');
-
 
 	$('.sidebar_small').click( function() {
-
 		$('.sidebar_small').css({"width": "150px", "transition": "1s"});
-
-//		var side = document.getElementsByClassName('sidebar_small');
-//		side.style.width = '100%';
-//		setTimeout( function() {
-			$('.nav_total').delay(999).show(0);
-//		}, 1000);
-//		setTimeout( function() {
-			$('.menu-drop').delay(999).show(0);
-//		}, 1000);
-//		setTimeout( function() {
-			$('.sidebar_large').delay(999).show(0);
-//		}, 1000);
-
+		$('.nav_total').delay(999).show(0);
+		$('.menu-drop').delay(999).show(0);
+		$('.sidebar_large').delay(999).show(0);
 	});
+
 
 	$('.yield').click( function() {
 		$('.nav_total').hide();
@@ -174,7 +168,7 @@ $( document ).ready(function() {
 
 
 	$('.menu-drop').click( function() {
-		$('.nav-extra').toggle();
+		$('.nav-extra').slideToggle();
 	});
 
 
