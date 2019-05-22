@@ -1,6 +1,6 @@
 class StoriesController < ApplicationController
-  before_action :set_user, only: [:index, :show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:index, :new, :edit, :update, :destroy]
+  before_action :set_user, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
   def index
     @stories = Story.all

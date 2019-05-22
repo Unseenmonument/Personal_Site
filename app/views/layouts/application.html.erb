@@ -36,11 +36,11 @@
 										  <p class="nav-extra-link"><%= link_to('Sign Out', destroy_user_session_path, method: :delete) %></p>        
 										</li>
 								  	<% end %>
-								  	<!--<% if user_signed_in? %>
-								  		<li id="btn_sign_out" class="nav-item side_bar">
-								  			<p class="vertical-text">Sign Out</p>
+								  	<% if user_signed_in? %>
+								  		<li id="btn_sign_out" class="side_bar nav-extra">
+								  			<p>Sign Out</p>
 								  		</li>
-								  	<% end %> -->
+								  	<% end %>
 
 							  		
 						  			<li class="side_bar nav-extra">
@@ -50,7 +50,7 @@
 						  				<p class="nav-extra-link">WebDev</p>
 						  			</li>
 						  			<li class="side_bar nav-extra">
-						  				<p class="nav-extra-link"><%= link_to('Writing Samples', _new_story_path) %></p>
+						  				<p class="nav-extra-link"><%= link_to('Writing Samples', stories_path) %></p>
 						  			</li>  		
 						  		</ul>
 						  	</div>
