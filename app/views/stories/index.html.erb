@@ -2,21 +2,20 @@
 	<div class="container-flex yield">
 		<% @stories.each do |story| %>
 			<div class="col-sm-2">
-				<ul>
-					<li>
+				
 						
 						<div class="card-title">
 							<%= story.title %>
 						</div>
-					</li>
-					<li>
+			</div>
+
+			<div class="col-sm-2">
 						<div class="more">
 							<p>
 								<%= story.story %>
 							</p>	
 						</div>
-					</li>
-				</ul>
 			</div>
+			
 		<% end %>
 	</div>
