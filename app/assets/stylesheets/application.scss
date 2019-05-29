@@ -302,3 +302,16 @@ body, html {
     width: 150px;
 }
 .nav-extra-link { cursor: pointer; }
+
+.book {
+    width: 50%;
+}
+
+.book-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//.book-row>div {
+//    flex: 0 50%;
+//}

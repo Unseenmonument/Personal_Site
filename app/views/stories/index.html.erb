@@ -1,26 +1,18 @@
 	
 	<div class="container-flex yield">
-		<div class="row">
+		<div class="row book-row">
 			<% @stories.each do |story| %>
-				<div class="card-title col-sm-2">
-					<%= story.title %>
-				</div>
+				<div class="book">
+					<div class="card-title col-sm-2">
+						<%= story.title %>
+					</div>
 
-				<div class="col-sm-2">
-					<div class="more">
-						<%= story.story %>
+					<div class="col-sm-2">
+						<div class="more">
+							<%= story.story %>
+						</div>
 					</div>
 				</div>
-
-				<!--<h1>Hello World!</h1>
-				  <p>Resize the browser window to see the effect.</p>
-				  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
-				  <div class="row">
-				    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-				    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
-				    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-				  </div> -->
-				
 			<% end %>
 		</div>	
 	</div>
