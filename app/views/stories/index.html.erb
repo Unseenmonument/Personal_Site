@@ -3,13 +3,15 @@
 		<div class="row book-row">
 			<% @stories.each do |story| %>
 				<div class="book">
-					<div class="card-title col-sm-2">
-						<%= story.title %>
-					</div>
+					<div class="row">
+						<div class="card-title col-sm-2 book">
+							<%= story.title %>
+						</div>
 
-					<div class="col-sm-2">
-						<div class="more">
-							<%= story.story %>
+						<div class="col-sm-2 book">
+							<div class="more">
+								<%= story.story %>
+							</div>
 						</div>
 					</div>
 				</div>
