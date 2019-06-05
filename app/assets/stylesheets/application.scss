@@ -304,7 +304,8 @@ body, html {
 .nav-extra-link { cursor: pointer; }
 
 .book {
-    width: 50%;
+    width: 300px;
+    top: 100px;
 }
 
 .book-row {
@@ -312,6 +313,7 @@ body, html {
     flex-wrap: wrap;
 }
 
-//.book-row>div {
-//    flex: 0 50%;
-//}
+.book-row>div {
+    flex: 0 50%;
+}
+
