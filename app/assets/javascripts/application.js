@@ -46,22 +46,19 @@ $( document ).ready(function() {
 
 	$('.fans_render').hide();
 
-	$('#main_content').hide();
+//	$('#main_content').hide();
 
-
+/*
 	$('.intro_name').delay(3000).fadeOut(500);
 	$('#intro').delay(3400).slideUp(500, function() {
-
 		$('#main_content').show();
 	});
 
 	$('#intro').click(function(){
-
 		$('#intro').hide();
 		$('#main_content').show();	
-
 	});
-
+*/
 
 	$('#about_me').click(function() {
 		$('.about_you').show();
