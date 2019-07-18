@@ -1,22 +1,24 @@
-	
+<h1> Let Me Tell You A Story... </h1>	
 	<div class="container-flex yield">
-		<div class="row book-row">
+		<!-- <div class="row book-row"> -->
 			<% @stories.each do |story| %>
 				<div class="book">
-					<div class="row">
-						<div class="card">
+					
+						<div class="book-title">
 							<div class="card-title book">
 								<%= story.title %>
 							</div>
-
-							<div class="book">
-								<div class="more">
-									<%= story.story %>
+							<div class="row">
+								<div> <h1>H</h1>
+								</div>
+								<div class="book">
+									<div class="more">
+										<%= story.story %>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+						</div>					
 				</div>
 			<% end %>
-		</div>	
+		<!-- </div> -->	
 	</div>

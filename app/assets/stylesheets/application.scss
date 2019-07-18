@@ -270,7 +270,7 @@ body, html {
 
 .nav-item {
     position: absolute;
-    bottomp: 0;
+    bottom: 0;
     left: 0%;
     width: 150px;
 }
@@ -304,8 +304,11 @@ body, html {
 .nav-extra-link { cursor: pointer; }
 
 .book {
-    width: 300px;
+    width: 75vw;
     top: 100px;
+    bottom: 5vh;
+    background-color: #4d6080;
+    border: 5vh;
 }
 
 .book-row {
@@ -315,5 +318,9 @@ body, html {
 
 .book-row>div {
     flex: 0 50%;
+}
+
+.book-title {
+    
 }
 
